@@ -2,9 +2,8 @@ require 'pry-byebug'
 
 def bubble_sort(arr)
     for a in arr do
-        p arr
         b = 0
-        until b == 5 do
+        until b == (arr.length - 1) do
             def swap(first, val, arr)
                 arr[first], arr[val] = arr[val], arr[first]
             end
